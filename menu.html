@@ -30,6 +30,7 @@
 				position: fixed;
 				z-index: 1;
 				inset: 0;
+				left: -2.5em;
 
 				transition: .3s;
 
@@ -43,7 +44,28 @@
 
 			   ul li{
 				list-style: none;
+				padding: .7em;
 			   }
+
+			   ul li:hover{
+				padding: .7em;
+				background-color: rgb(5, 5, 66);
+				
+				a{color: aquamarine;}
+			   }
+
+			   ul li:first-of-type:hover{
+				background-color: transparent;
+			   }
+
+			   li a{
+				color: rgb(5, 5, 66);
+				font-weight: bolder;
+				text-decoration: none;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			   }
+			
+
 		</style>
 		<script type="module">
 			/* Schrijf hier eventueel je client-side JavaScript */
