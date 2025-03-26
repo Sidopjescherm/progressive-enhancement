@@ -11,6 +11,28 @@
 
 			/* Hint: kijk eens naar :target
 			   https://developer.mozilla.org/en-US/docs/Web/CSS/:target */
+			   video{
+				z-index: 1;
+			   }
+			   #menu{
+				background-color: aquamarine;
+				inline-size: 18em;
+				gap: 12em;
+				z-index: 0;
+
+				position: fixed;
+				inset: 0em;
+
+				transition: .3s;
+
+				/* display: none; */
+			   }
+
+			   #menu::after{
+				display: block;
+			   }
+			   
+
 		</style>
 		<script type="module">
 			/* Schrijf hier eventueel je client-side JavaScript */
@@ -22,6 +44,7 @@
 		<main>
 			<h1>Mobiel menu</h1>
 
+		<button href="#menu">Menu</button>
 			
 		<nav id="menu">
 			<ul>
