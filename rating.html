@@ -7,6 +7,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 		<link href="assets/styles.css" rel="stylesheet">
 		<style>
+			div{
+				display: flex;
+			}
 			/* Schrijf hier gewoon je CSS voor dit component */
 			
 			/* Hint: als je de sterren als achtergrond voor iets wilt gebruiken, zijn dit de SVG's die je kunt gebruiken:
@@ -33,7 +36,25 @@
 
 		<!-- Waarschijnlijk wil je je rating ooit opslaan, dus heb je een formulier nodig -->
 		<form method="post">
+			<fieldset>
+				<legend>Geef hier je rating</legend>
+					<div>
+						<input type="radio" id="1" name="rate"/>
+						<label for="1"><p>1 ster</p></label>
 
+						<input type="radio" id="2" name="rate"/>
+						<label for="2"><p>2 sterren</p></label>
+
+						<input type="radio" id="3" name="rate"/>
+						<label for="3"><p>3 sterren</p></label>
+						
+						<input type="radio" id="4" name="rate"/>
+						<label for="4"><p>4 sterren</p></label>
+						
+						<input type="radio" id="5" name="rate"/>
+						<label for="5"><p>5 sterren</p></label>
+					</div>
+			</fieldset>
 			<!-- Hint: hoeveel verschillende ratings kun je geven? -->
 
 			<!-- Hint: of is dit met één formulierelement te maken? -->
