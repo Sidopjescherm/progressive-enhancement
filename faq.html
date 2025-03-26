@@ -53,7 +53,11 @@
 				details summary::marker{
 					content: '';	}
 
-
+				@supports selector(::marker){
+					body{
+						background-color: #000 !important;
+					}
+				}
 				details summary::before {
 					
 					content: "+";
