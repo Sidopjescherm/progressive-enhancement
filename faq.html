@@ -54,22 +54,20 @@
 					content: '';	}
 
 				@supports selector(::marker){
-					body{
-						background-color: #000 !important;
+					details summary::before {
+						
+						content: "+";
+						transition: 0.2s;
+						font-weight: bolder;
+						display: inline-block;
+						font-size: larger;
+						font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 					}
+					details[open] summary::before{
+						transform: rotate(45deg);
+					} 
 				}
-				details summary::before {
-					
-					content: "+";
-					transition: 0.2s;
-					font-weight: bolder;
-					display: inline-block;
-					font-size: larger;
-					font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-				}
-				details[open] summary::before{
-					transform: rotate(45deg);
-				} 
+				
 
 				details p{
 					padding: 1rem;
