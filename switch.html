@@ -52,6 +52,16 @@
 				content: "aan";
 				font-size: 1em;
 				font-weight: bold;
+				*,*::before*::after{
+					box-sizing: border-box;
+				}
+		
+				label {
+					display:inline-flex;
+					align-items:center;
+					gap:.25em;
+					cursor:pointer;
+				}
 				
 				align-content: center;
 			}
