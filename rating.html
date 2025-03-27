@@ -11,8 +11,30 @@
 			div{
 				display: flex;
 			}
+			
+			input{
+				appearance: none;
+				z-index: 2;
+				height: 3em;
+				width: 3em;
+			}
 
 			label{
+				height: 3em;
+				width: 3em;
+				background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%2366E5BF" d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"></path></svg>') ;
+			}
+
+			input:checked ~ label, input:focus ~ label, label:hover, label:hover ~ label{
+				background-repeat: no-repeat;
+				background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%2366E5BF" d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>') ;
+			}
+
+			/* label{
+				color: transparent;
+				z-index: 1;
+				height: 5em;
+				width: 5em;
 				background-repeat: no-repeat;
 				background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%2366E5BF" d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"></path></svg>') ;
 			}
@@ -20,7 +42,7 @@
 			label:hover{
 				background-repeat: no-repeat;
 				background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%2366E5BF" d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>') ;
-			}
+			} */
 			/* Schrijf hier gewoon je CSS voor dit component */
 			
 			/* Hint: als je de sterren als achtergrond voor iets wilt gebruiken, zijn dit de SVG's die je kunt gebruiken:
@@ -50,20 +72,20 @@
 			<fieldset>
 				<legend>Geef hier je rating</legend>
 					<div>
-						<input type="radio" id="een" name="rate"/>
-						<label for="een"><p>1 ster</p></label>
+						<input type="radio" id="een_ster" name="rate" value="1"/>
+						<label for="een_ster">1 ster</label>
 
-						<input type="radio" id="2" name="rate"/>
-						<label for="2"><p>2 sterren</p></label>
+						<input type="radio" id="twee_sterren" name="rate" value="2"/>
+						<label for="twee_sterren">2 sterren</label>
 
-						<input type="radio" id="3" name="rate"/>
-						<label for="3"><p>3 sterren</p></label>
+						<input type="radio" id="drie_sterren" name="rate"/>
+						<label for="drie_sterren">3 sterren</label>
 						
-						<input type="radio" id="4" name="rate"/>
-						<label for="4"><p>4 sterren</p></label>
+						<input type="radio" id="vier_sterren" name="rate"/>
+						<label for="vier_sterren">4 sterren</label>
 						
-						<input type="radio" id="5" name="rate"/>
-						<label for="5"><p>5 sterren</p></label>
+						<input type="radio" id="vijf_sterren" name="rate"/>
+						<label for="vijf_sterren">5 sterren</label>
 					</div>
 
 					<label for="sturen"></label>
